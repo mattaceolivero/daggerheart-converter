@@ -57,6 +57,7 @@ mkdir -p ~/.claude/skills/dh-convert
 mkdir -p ~/.claude/skills/dh-adversary
 mkdir -p ~/.claude/skills/dh-environment
 mkdir -p ~/.claude/skills/dh-npc
+mkdir -p ~/.claude/skills/dh-loot
 mkdir -p ~/.claude/skills/daggerheart-docs
 
 # Copy skill files
@@ -64,6 +65,7 @@ cp skills/dh-convert/SKILL.md ~/.claude/skills/dh-convert/
 cp skills/dh-adversary/SKILL.md ~/.claude/skills/dh-adversary/
 cp skills/dh-environment/SKILL.md ~/.claude/skills/dh-environment/
 cp skills/dh-npc/SKILL.md ~/.claude/skills/dh-npc/
+cp skills/dh-loot/SKILL.md ~/.claude/skills/dh-loot/
 
 # Copy reference documentation
 cp docs/daggerheart-reference.md ~/.claude/skills/daggerheart-docs/
@@ -126,6 +128,20 @@ Creates NPCs with streamlined stat blocks focused on roleplay rather than combat
 - Name and motivations
 - A secret (mundane to dangerous)
 - A memorable quirk (speech, mannerism, or outlook)
+
+---
+
+#### `/dh-loot` - Generate Loot and Treasure
+
+Generates thematic, tier-appropriate loot with interesting descriptions and plot hooks.
+
+**Generates:**
+- Currency (with flavor descriptions)
+- Consumables (potions, scrolls, utility items)
+- Equipment (weapons, armor with magical properties)
+- Crafting materials (by creature type)
+- Valuables and trade goods
+- Unique treasures with names, history, and plot hooks
 
 ---
 
@@ -447,6 +463,75 @@ Rummage lets a group of smugglers use his cellar to store contraband in exchange
 
 ---
 
+#### Example 5: Generating Loot
+
+**You:** `/dh-loot`
+
+**You:** Generate treasure for a Tier 3 dragon's hoard
+
+**Claude responds with:**
+
+```markdown
+# ANCIENT WYRM'S HOARD
+
+*Tier 3 Major Hoard*
+
+---
+
+## Currency
+
+Three iron-bound chests overflowing with coin - approximately 2,400 gold pieces. The coins span centuries: tarnished silver imperials, gleaming dwarven trade bars, delicate elven crescents, and crude orcish slugs. Several handfuls of uncut gemstones are mixed throughout.
+
+## Consumables
+
+- **Bottled Dragon's Breath (2)**: Throw to create a 15ft cone of fire dealing 3d6 damage
+- **Potion of Fire Immunity**: Complete immunity to fire for 1 hour
+- **Scroll of Sending**: One-time long-distance message spell
+- **Phoenix Down**: Single-use resurrection for a creature dead less than 1 minute
+
+## Equipment
+
+- **Dragonscale Shield** (+2 Evasion): Grants resistance to fire damage
+- **Wyrmtooth Spear** (+2, returns when thrown): Deals +1d6 damage to dragons
+
+## Materials
+
+- **Pristine Dragon Scales (12)**: Worth 800 gold total, or can craft legendary armor
+- **Dragon Heartblood (vial)**: Alchemical component worth 500 gold
+- **Intact Fire Gland**: Can be used to craft a flame-producing item
+
+## Valuables
+
+- **Crown of the Fallen King**: Worth 600 gold, or priceless to the right kingdom
+- **Tapestry of the First Flame**: Depicts the creation of dragons, 400 gold to a collector
+- **Ivory chess set with jade pieces**: 200 gold, one piece is hollow and contains a tiny key
+
+## Unique Treasure
+
+### THE INEVITABLE CONCLUSION
+
+*Greatsword | Tier 3 Rare | Value: 1,200 gold*
+
+> A blade of black iron with veins of molten orange running through it like cooling lava. The crossguard is shaped like spread dragon wings, and the pommel contains a still-warm ember.
+
+**Properties:**
+- +2 to attack rolls
+- Deals +2d6 fire damage
+- Once per day, can cast Fireball centered on the wielder (wielder is immune)
+
+**History:** Forged from the remains of the first dragon ever slain by mortals, this blade has killed seventeen dragons since. Each dragon that falls to it makes the blade burn slightly hotter.
+
+**Plot Hook:** The blade is technically the rightful property of the Dragonslayer Order, who disbanded two centuries ago. Their descendants might have opinions about its new owner.
+
+---
+
+**Total Approximate Value:** ~6,500 gold
+
+**Notes for GM:** The hollow chess piece key opens a vault in the fallen king's ruined castle. The tapestry might offend living dragons who see it.
+```
+
+---
+
 ## TypeScript Library
 
 For developers who want to use this programmatically.
@@ -560,7 +645,8 @@ daggerheart-converter/
 │   ├── dh-convert/
 │   ├── dh-adversary/
 │   ├── dh-environment/
-│   └── dh-npc/
+│   ├── dh-npc/
+│   └── dh-loot/
 └── tests/                # Test suite
 ```
 

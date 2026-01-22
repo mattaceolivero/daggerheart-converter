@@ -33,6 +33,13 @@ Creates memorable NPCs with streamlined stat blocks focused on roleplay.
 - A memorable quirk (speech, mannerism, outlook)
 @~/.claude/skills/dh-npc/SKILL.md
 
+### /dh-loot
+Generates thematic, tier-appropriate loot with interesting descriptions.
+- Currency, consumables, equipment, materials
+- Unique treasures with names and plot hooks
+- Scales by tier and context (creature drops, hoards, quest rewards)
+@~/.claude/skills/dh-loot/SKILL.md
+
 ## Quick Reference
 
 ### Player Level to Tier
