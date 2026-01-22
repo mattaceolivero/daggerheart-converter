@@ -31,7 +31,7 @@ These skills work with [Claude Code](https://claude.ai/code) to provide natural 
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/daggerheart-converter.git
+git clone https://github.com/mattaceolivero/daggerheart-converter.git
 cd daggerheart-converter
 
 # Run the install script
@@ -49,7 +49,7 @@ If you prefer to install manually:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/daggerheart-converter.git
+git clone https://github.com/mattaceolivero/daggerheart-converter.git
 cd daggerheart-converter
 
 # Create skills directories
@@ -369,7 +369,7 @@ For developers who want to use this programmatically.
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/daggerheart-converter.git
+git clone https://github.com/mattaceolivero/daggerheart-converter.git
 cd daggerheart-converter
 npm install
 npm run build
