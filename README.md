@@ -56,12 +56,14 @@ cd daggerheart-converter
 mkdir -p ~/.claude/skills/dh-convert
 mkdir -p ~/.claude/skills/dh-adversary
 mkdir -p ~/.claude/skills/dh-environment
+mkdir -p ~/.claude/skills/dh-npc
 mkdir -p ~/.claude/skills/daggerheart-docs
 
 # Copy skill files
 cp skills/dh-convert/SKILL.md ~/.claude/skills/dh-convert/
 cp skills/dh-adversary/SKILL.md ~/.claude/skills/dh-adversary/
 cp skills/dh-environment/SKILL.md ~/.claude/skills/dh-environment/
+cp skills/dh-npc/SKILL.md ~/.claude/skills/dh-npc/
 
 # Copy reference documentation
 cp docs/daggerheart-reference.md ~/.claude/skills/daggerheart-docs/
@@ -110,6 +112,20 @@ Creates detailed combat environments with terrain, hazards, and interactive elem
 - Hazards (traps, damage zones, environmental effects)
 - Interactive elements (destructible objects, levers, environmental weapons)
 - Atmosphere (lighting, weather, sensory details)
+
+---
+
+#### `/dh-npc` - Create Memorable NPCs
+
+Creates NPCs with streamlined stat blocks focused on roleplay rather than combat.
+
+**Includes:**
+- Simplified stats (Difficulty, HP, Stress, Major/Severe thresholds)
+- Race and age
+- Physical description
+- Name and motivations
+- A secret (mundane to dangerous)
+- A memorable quirk (speech, mannerism, or outlook)
 
 ---
 
@@ -362,6 +378,75 @@ The cult has repurposed this abandoned dwarven forge for their dark ritual. Mass
 
 ---
 
+#### Example 4: Creating an NPC
+
+**You:** `/dh-npc`
+
+**You:** Create a suspicious innkeeper for a small village
+
+**Claude responds with:**
+
+```markdown
+# MILO THISTLEDOWN
+
+*Halfling Middle-aged, Innkeeper*
+
+> A plump halfling with thinning hair he combs over obsessively, darting eyes that never quite meet yours, and flour-dusted clothes despite never seeming to cook.
+
+---
+
+## At a Glance
+
+| Stat | Value |
+|------|-------|
+| **Difficulty** | 12 |
+| **HP** | 5 |
+| **Stress** | 2 |
+| **Thresholds** | 4/8 |
+
+---
+
+## Motivations
+
+- **Keep the inn running** - It's all he has left after his wife passed
+- **Stay out of trouble** - He's seen what happens to people who get involved
+- **Protect his niece** - She works as a barmaid and he's terrified for her safety
+
+---
+
+## The Secret
+
+*Dangerous*
+
+Milo lets a group of smugglers use his cellar to store contraband in exchange for "protection money." He hates it but feels trapped - they've threatened his niece if he talks.
+
+**If discovered:** He'll panic, then beg for help. If the PCs seem capable, he might desperately ask them to deal with the smugglers. If they seem threatening, he'll lie poorly and then try to warn the smugglers.
+
+---
+
+## The Quirk
+
+**The Overexplainer**: Milo gives exhaustingly detailed explanations for everything, especially things no one asked about. Ask for a room? He'll explain the history of each room, why one has a draft, which bed his grandmother died in.
+
+*In play:* When PCs ask simple questions, give a rambling 30-second answer. Let players interrupt him - he won't be offended, he's used to it.
+
+---
+
+## Roleplaying Notes
+
+**Voice/Demeanor:** Nervous, talks too fast, laughs at inappropriate moments
+
+**Attitude toward strangers:** Overly welcoming in a way that feels rehearsed and slightly desperate
+
+**What they want from PCs:** Ideally, for them to pay for a room and not ask questions. Secretly, he's hoping someone capable enough to help will walk through that door.
+
+---
+
+*Tags: npc, innkeeper, halfling, tier-1, nervous, secret-criminal-connection*
+```
+
+---
+
 ## TypeScript Library
 
 For developers who want to use this programmatically.
@@ -474,7 +559,8 @@ daggerheart-converter/
 ├── skills/               # Claude Code skill files
 │   ├── dh-convert/
 │   ├── dh-adversary/
-│   └── dh-environment/
+│   ├── dh-environment/
+│   └── dh-npc/
 └── tests/                # Test suite
 ```
 

@@ -31,7 +31,7 @@ Battle Points = (3 × number of PCs) + 2
 | Adversary Type    | Cost | Description |
 |-------------------|------|-------------|
 | Minion (group)    | 1 BP | Group size = party size |
-| Social/Support    | 1 BP | Non-combat focused |
+| Social/Support    | 1 BP | Non-combat focused, debuffs |
 | Horde             | 2 BP | Swarm mechanics |
 | Ranged            | 2 BP | Ranged attackers |
 | Skulk             | 2 BP | Stealth/mobility |
@@ -56,43 +56,74 @@ Battle Points = (3 × number of PCs) + 2
 
 ### Tier 1 (Player Level 1)
 
-| Type     | Evasion | Thresholds  | HP    | Stress | Attack | Damage    |
-|----------|---------|-------------|-------|--------|--------|-----------|
-| Minion   | 8-10    | 2/4/6       | 1     | 0      | +2     | 1d6       |
-| Standard | 10-12   | 3/6/9       | 4-6   | 2      | +3     | 1d6+1     |
-| Bruiser  | 9-11    | 4/8/12      | 6-8   | 3      | +4     | 1d8+2     |
-| Leader   | 10-12   | 3/6/9       | 5-7   | 3      | +3     | 1d6+1     |
-| Solo     | 12-14   | 5/10/15     | 10-15 | 5      | +4     | 1d10+2    |
+| Type     | Difficulty | Thresholds | HP    | Stress | ATK  | Damage    |
+|----------|------------|------------|-------|--------|------|-----------|
+| Minion   | 8-10       | 4/8        | 1     | 0      | -2   | 1d6+3     |
+| Standard | 12         | 5/10       | 4     | 3      | +1   | 1d8+1     |
+| Horde    | 8          | 4/8        | 4     | 2      | -2   | 1d6+3     |
+| Leader   | 13         | 7/13       | 6     | 3      | +3   | 1d10+2    |
+| Bruiser  | 11         | 8/15       | 6-8   | 3      | +2   | 1d10+3    |
+| Solo     | 14         | 8/15       | 8     | 3      | +2   | 1d10+3    |
 
 ### Tier 2 (Player Levels 2-4)
 
-| Type     | Evasion | Thresholds  | HP    | Stress | Attack | Damage    |
-|----------|---------|-------------|-------|--------|--------|-----------|
-| Minion   | 10-12   | 3/6/9       | 1     | 0      | +3     | 1d6+1     |
-| Standard | 12-14   | 4/8/12      | 6-10  | 3      | +5     | 1d8+2     |
-| Bruiser  | 11-13   | 5/10/15     | 10-14 | 4      | +6     | 2d6+2     |
-| Leader   | 12-14   | 4/8/12      | 8-12  | 4      | +5     | 1d8+2     |
-| Solo     | 14-16   | 6/12/18     | 18-25 | 7      | +6     | 2d8+3     |
+| Type     | Difficulty | Thresholds | HP    | Stress | ATK  | Damage    |
+|----------|------------|------------|-------|--------|------|-----------|
+| Minion   | 10-12      | 6/12       | 1     | 0      | +1   | 1d8+2     |
+| Standard | 14         | 10/20      | 4-6   | 3      | +2   | 2d8+2     |
+| Support  | 13         | 9/18       | 3-4   | 3-4    | +2   | 2d8+1     |
+| Skulk    | 14         | 9/17       | 4     | 5      | +3   | 2d8+2     |
+| Bruiser  | 13-15      | 14/28-15/30| 5-8   | 2-3    | +2   | 2d10+3-2d12+3 |
+| Solo     | 15         | 10/20      | 8     | 6      | +2   | 2d6+3     |
 
 ### Tier 3 (Player Levels 5-7)
 
-| Type     | Evasion | Thresholds  | HP    | Stress | Attack | Damage    |
-|----------|---------|-------------|-------|--------|--------|-----------|
-| Minion   | 12-14   | 4/8/12      | 1     | 0      | +5     | 1d8+2     |
-| Standard | 14-16   | 5/10/15     | 10-16 | 4      | +7     | 2d6+3     |
-| Bruiser  | 13-15   | 6/12/18     | 16-22 | 5      | +8     | 2d8+4     |
-| Leader   | 14-16   | 5/10/15     | 12-18 | 5      | +7     | 2d6+3     |
-| Solo     | 16-18   | 7/14/21     | 28-40 | 9      | +8     | 2d10+4    |
+| Type     | Difficulty | Thresholds | HP    | Stress | ATK  | Damage    |
+|----------|------------|------------|-------|--------|------|-----------|
+| Minion   | 12-14      | 8/16       | 1     | 0      | +3   | 2d6+2     |
+| Standard | 16         | 15/30      | 6-8   | 4-5    | +4   | 3d8+3     |
+| Support  | 16         | 24/38      | 8     | 5      | +4   | 3d10+6    |
+| Skulk    | 16         | 16/32      | 6     | 5      | +0   | 3d8+2     |
+| Ranged   | 18         | 20/36      | 6     | 6      | +4   | 3d8+5     |
+| Bruiser  | 17         | 22/40      | 9     | 5      | +5   | 3d12      |
+| Solo     | 17         | 20/40      | 10-12 | 7      | +5   | 3d10+5    |
 
 ### Tier 4 (Player Levels 8-10)
 
-| Type     | Evasion | Thresholds  | HP    | Stress | Attack | Damage    |
-|----------|---------|-------------|-------|--------|--------|-----------|
-| Minion   | 14-16   | 5/10/15     | 1     | 0      | +7     | 2d6+2     |
-| Standard | 16-18   | 6/12/18     | 16-24 | 5      | +9     | 2d8+4     |
-| Bruiser  | 15-17   | 7/14/21     | 24-32 | 6      | +10    | 3d8+5     |
-| Leader   | 16-18   | 6/12/18     | 18-26 | 6      | +9     | 2d8+4     |
-| Solo     | 18-20   | 8/16/24     | 40-60 | 11     | +11    | 3d10+5    |
+| Type     | Difficulty | Thresholds | HP    | Stress | ATK  | Damage    |
+|----------|------------|------------|-------|--------|------|-----------|
+| Minion   | 14-16      | 10/20      | 1     | 0      | +5   | 2d8+3     |
+| Standard | 18         | 20/40      | 8-10  | 5      | +6   | 4d8+5     |
+| Horde    | 17         | 24/48      | 7     | 6      | +2   | 4d10      |
+| Social   | 19         | 27/47      | 4     | 3      | +7   | 4d8+5     |
+| Leader   | 20         | 37/70      | 7     | 5      | +8   | 4d10+10   |
+| Bruiser  | 18         | 30/60      | 10-12 | 6      | +8   | 4d10+6    |
+| Solo     | 20         | 35/70      | 12    | 10     | +8   | 4d12+6    |
+
+## Damage Types
+
+Only **two** damage types exist in Daggerheart:
+
+| Type | Description |
+|------|-------------|
+| **Physical (phy)** | Slashing, piercing, bludgeoning, crushing |
+| **Magic (mag)** | Fire, cold, lightning, acid, poison, necrotic, radiant, psychic, force |
+
+**Note:** Subtypes like "fire" or "acid" are flavor text, not mechanical types.
+
+**Direct Damage:** Bypasses armor - target cannot use armor slots to reduce it.
+
+## Feature Cost Guidelines
+
+| Cost | Power Level | Usage |
+|------|-------------|-------|
+| Free | Least impactful | Passives, minor effects |
+| Mark a Stress | Moderate impact | Creates natural cap per scene |
+| Spend a Fear | Most powerful | GM's dramatic budget, big moments |
+
+**Stress costs** naturally limit uses because most adversaries can't clear stress.
+
+**Fear costs** come from the GM's Fear pool - a narrative resource.
 
 ## Adversary Role Features
 
@@ -107,9 +138,15 @@ Battle Points = (3 × number of PCs) + 2
 - 1-2 features (passive + action or reaction)
 - Forms the core of most encounters
 
+### Support
+- Moderate combat stats
+- Focus on debuffing PCs
+- Features that interfere with PC actions
+- Often forces difficult choices
+
 ### Bruiser
 - Higher HP and damage
-- Lower Evasion (easier to hit)
+- Slightly lower Difficulty (easier to hit)
 - Features focused on dealing damage
 - May have charge or slam abilities
 
@@ -120,57 +157,52 @@ Battle Points = (3 × number of PCs) + 2
 - Often stays in back line
 
 ### Skulk
-- High Evasion, lower HP
+- Higher Difficulty, lower HP
 - Mobility features (teleport, dash)
 - Stealth and ambush abilities
 - Hit-and-run tactics
 
 ### Ranged
-- Lower Evasion and HP
+- Lower Difficulty and HP
 - Strong ranged attacks (Far/Very Far)
 - May have cover or escape abilities
 - Vulnerable in melee
 
 ### Horde
-- Swarm mechanics
-- Damage reduces as HP drops
-- Starting damage vs reduced damage
+- Swarm mechanics with degrading damage
+- Starting damage vs reduced damage when at half HP
 - Takes up space, difficult terrain
+- Example: `Horde (1d4)` - deals 1d4 when at half+ HP marked
 
 ### Solo
 - Boss-level threat
-- Multiple actions per round (Relentless)
-- Legendary abilities (reactions at end of turns)
-- Legendary Resilience (auto-succeed saves)
+- Multiple actions per round via Relentless (X)
+- Should have fear generation engine
 - High Stress pool for many abilities
+- May use Countdowns for dramatic tension
 
-## Fear and Stress Mechanics
+## Conditions
 
-### Fear Generation
-Abilities that frighten targets should **mark Fear**:
-- Frightful Presence: "Targets must make an Instinct Reaction Roll or **mark 1 Fear** and become Frightened"
-- Terrifying abilities add mechanical weight through Fear economy
+### Base Conditions (3 Core)
+| Condition | Effect |
+|-----------|--------|
+| **Vulnerable** | Attacks against have advantage |
+| **Restrained** | Can't move |
+| **Hidden** | Can't be targeted, advantage on attacks |
 
-### Fear Consumption
-Powerful abilities can consume Fear for bonus effects:
-- "**Requires:** Target has Fear marked"
-- "Deals **Xd10 magic damage**. Target clears their Fear."
-- Costs listed as "(Action, 1 Fear)"
+### Custom Conditions
+Adversaries and environments can define custom conditions with their own rules:
+- Must define how to apply the condition
+- Must define how to clear the condition
+- Examples: Disoriented, Engulfed, Shrouded, Beguiled, Poisoned, Crystallizing
 
-### Stress Costs
-| Ability Power | Stress Cost |
-|---------------|-------------|
-| Minor ability | 0-1 Stress  |
-| Standard ability | 1-2 Stress |
-| Powerful ability | 2-3 Stress |
-| Legendary ability | 3+ Stress |
-
-## Damage Types
-
-| Type | Examples |
-|------|----------|
-| Physical | Slashing, piercing, bludgeoning, crushing |
-| Magic | Fire, cold, lightning, acid, poison, necrotic, radiant, psychic, force |
+### Condition Clearing
+Common clearing triggers:
+- "until they roll with hope"
+- "when they clear stress"
+- "when they take the spotlight"
+- "until they succeed on a [Attribute] Roll ([Difficulty])"
+- "until the [adversary] is defeated"
 
 ## Range Bands
 
@@ -182,17 +214,12 @@ Powerful abilities can consume Fear for bonus effects:
 | Far | Across a room | 60-80 ft |
 | Very Far | Long distance | 120+ ft |
 
-## Conditions
+## Experience Topics
 
-| Condition | Effect |
-|-----------|--------|
-| Frightened | Disadvantage on attacks, can't approach source |
-| Charmed | Won't attack charmer, advantage on social |
-| Restrained | Can't move, disadvantage on Agility |
-| Vulnerable | Attacks against have advantage |
-| Hidden | Can't be targeted, advantage on attacks |
-| Disoriented | Disadvantage on attacks and perception |
-| Incapacitated | Can't take actions or reactions |
+Adversaries have Experience topics that provide bonuses:
+- Can be used offensively (adversary attacks)
+- GM can spend Fear to apply to PC rolls against the adversary
+- Format: `Topic +X` (e.g., `Camouflage +2, Hungry +2`)
 
 ## Loot Guidelines
 
@@ -235,7 +262,7 @@ Powerful abilities can consume Fear for bonus effects:
 - Damage → Use damage conversion table
 - Level → Determines Tier and base stats
 - Modifications → Become features or stat adjustments
-- GM Intrusions → Special abilities (Action, 2 Stress)
+- GM Intrusions → Special abilities (Action, spend a Fear)
 
 ### Pathfinder 2e to Daggerheart
 | PF2e Level | Daggerheart Tier |
@@ -248,10 +275,33 @@ Powerful abilities can consume Fear for bonus effects:
 ## Environment Creation
 
 ### Environment Components
-1. **Terrain Features**: Cover, difficult terrain, elevation
-2. **Hazards**: Damage zones, traps, environmental effects
-3. **Interactive Elements**: Levers, doors, destructible objects
-4. **Atmosphere**: Lighting, weather, ambient effects
+Environments are simpler than adversaries - they don't have HP, Stress, Thresholds, or Attack stats.
+
+**Environment Stat Block:**
+- **Tier and Type**: (Social, Event, Traversal)
+- **Description**: Evocative one-line description
+- **Impulses**: What the environment "wants" to do
+- **Difficulty**: Target number for rolls against environment
+- **Potential Adversaries**: Suggested creatures that fit
+- **Features**: With GM prompting questions in italics
+
+### Environment Types
+| Type | Focus | Examples |
+|------|-------|----------|
+| **Social** | Interaction, roleplay | Grand Feast, City of Portals |
+| **Event** | Timed scenarios | Heist, Chase |
+| **Traversal** | Navigation, exploration | Crystal Wasteland, Dungeon |
+
+### Environment Feature Format
+Features include:
+- **Passive**: Always active effects
+- **Action**: GM spends spotlight or Fear
+- **Reaction**: Triggered by PC actions
+
+Each feature should include italicized GM prompting questions:
+```
+*What does it feel like? How does this change the situation?*
+```
 
 ### Hazard Statistics
 | Severity | Damage | Reaction Roll |
@@ -261,17 +311,32 @@ Powerful abilities can consume Fear for bonus effects:
 | Major    | 3d6    | 16-18         |
 | Severe   | 4d6+   | 19+           |
 
-### Environment Types
-- **Natural**: Forests, caves, mountains, water
-- **Urban**: Streets, buildings, sewers, rooftops
-- **Dungeon**: Corridors, chambers, traps, secrets
-- **Otherworldly**: Elemental planes, dream realms, void
+## Common Mechanics
+
+### Countdowns
+Used for building tension or tracking progress:
+- **Standard**: Ticks down on action rolls
+- **Loop**: Resets after triggering
+- Format: `Countdown (X)` or `Countdown (Loop X)`
+
+### Tokens
+Placed on stat blocks to track states:
+- Can be spent for effects
+- Can modify stats while present
+
+### Relentless (X)
+Solo adversaries can be spotlighted X times per GM turn.
+
+### Evolution
+Adversary transforms when conditions are met, gaining new stats/features.
 
 ---
 
 ## Sources
 
-- [Daggerheart Homebrew Kit](https://www.daggerheart.com/homebrewkit/)
+- [Daggerheart Homebrew Kit v1.0](https://www.daggerheart.com/homebrewkit/)
+- [Daggerheart Adversaries & Environments v1.5](https://daggerheart.com)
 - [Daggerheart Battle Guide](https://app.demiplane.com/nexus/daggerheart/rules/battle-guide)
 - [Heart of Daggers - Making Custom Adversaries](https://heartofdaggers.com/products/making-custom-adversaries/)
 - [Daggerheart Encounter Builder](https://coryroush.github.io/daggerheart-encounter-builder/)
+- Mike Underwood's Monster Factory Stream (design process insights)

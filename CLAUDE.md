@@ -25,6 +25,14 @@ Creates battle environments with terrain, hazards, and interactive elements.
 - Interactive elements for creative combat
 @~/.claude/skills/dh-environment/SKILL.md
 
+### /dh-npc
+Creates memorable NPCs with streamlined stat blocks focused on roleplay.
+- Simplified stats (Difficulty, HP, Stress, Thresholds)
+- Name, race, age, physical description
+- Motivations and a secret (mundane to dangerous)
+- A memorable quirk (speech, mannerism, outlook)
+@~/.claude/skills/dh-npc/SKILL.md
+
 ## Quick Reference
 
 ### Player Level to Tier
