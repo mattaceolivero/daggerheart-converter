@@ -40,6 +40,14 @@ Generates thematic, tier-appropriate loot with interesting descriptions.
 - Scales by tier and context (creature drops, hoards, quest rewards)
 @~/.claude/skills/dh-loot/SKILL.md
 
+### /dh-encounter
+Generates dynamic random encounters with multiple resolution paths.
+- Situation, stakes, key players with motivations
+- Environmental features and tactical elements
+- Built-in twists and complications
+- Combat, negotiation, stealth, and creative solutions
+@~/.claude/skills/dh-encounter/SKILL.md
+
 ## Quick Reference
 
 ### Player Level to Tier

@@ -58,6 +58,7 @@ mkdir -p ~/.claude/skills/dh-adversary
 mkdir -p ~/.claude/skills/dh-environment
 mkdir -p ~/.claude/skills/dh-npc
 mkdir -p ~/.claude/skills/dh-loot
+mkdir -p ~/.claude/skills/dh-encounter
 mkdir -p ~/.claude/skills/daggerheart-docs
 
 # Copy skill files
@@ -66,6 +67,7 @@ cp skills/dh-adversary/SKILL.md ~/.claude/skills/dh-adversary/
 cp skills/dh-environment/SKILL.md ~/.claude/skills/dh-environment/
 cp skills/dh-npc/SKILL.md ~/.claude/skills/dh-npc/
 cp skills/dh-loot/SKILL.md ~/.claude/skills/dh-loot/
+cp skills/dh-encounter/SKILL.md ~/.claude/skills/dh-encounter/
 
 # Copy reference documentation
 cp docs/daggerheart-reference.md ~/.claude/skills/daggerheart-docs/
@@ -142,6 +144,21 @@ Generates thematic, tier-appropriate loot with interesting descriptions and plot
 - Crafting materials (by creature type)
 - Valuables and trade goods
 - Unique treasures with names, history, and plot hooks
+
+---
+
+#### `/dh-encounter` - Generate Random Encounters
+
+Creates dynamic encounters with multiple resolution paths and built-in complications.
+
+**Includes:**
+- The situation (what's happening when PCs arrive)
+- Key players with wants, fears, and default actions
+- Environmental details and tactical features
+- A twist that makes it interesting
+- Multiple resolution paths (combat, negotiation, stealth, creative)
+- Aftermath and consequences
+- Connections to larger plots
 
 ---
 
@@ -532,6 +549,122 @@ Three iron-bound chests overflowing with coin - approximately 2,400 gold pieces.
 
 ---
 
+#### Example 6: Generating a Random Encounter
+
+**You:** `/dh-encounter`
+
+**You:** Generate a Tier 1 urban encounter in a busy marketplace
+
+**Claude responds with:**
+
+```markdown
+# THE PICKPOCKET'S PROBLEM
+
+*Tier 1 Social/Combat Encounter — City Marketplace*
+
+---
+
+## The Situation
+
+A young goblin girl, no older than twelve, crashes into the party's legs while fleeing through the crowded market. She's clutching a silk purse. Ten feet behind her, a red-faced merchant is shouting "THIEF!" and a city guard is pushing through the crowd toward both of them. The goblin looks up at the PCs with wide, terrified eyes.
+
+## The Stakes
+
+**What's at risk:** The girl's freedom (or hand, depending on local law), the merchant's coin, the PCs' reputation
+**Who cares:** The goblin, the merchant, the guard, the crowd watching
+**Time pressure:** The guard arrives in about 30 seconds. The crowd is forming a circle.
+
+---
+
+## Key Players
+
+### Skitter, Goblin Pickpocket
+- **Want:** To escape and bring money back to her family
+- **Fear:** The punishment for theft (she's seen what they do)
+- **Will:** Beg for help, offer to split the take, try to slip away in chaos
+
+###Vendrick Brass, Merchant
+- **Want:** His purse back, the thief punished publicly
+- **Fear:** Looking weak (bad for business)
+- **Will:** Demand maximum punishment, won't negotiate down easily
+
+### Guard-Sergeant Hollis
+- **Want:** To resolve this quickly and get back to his post
+- **Fear:** Paperwork, crowds getting rowdy
+- **Will:** Arrest the goblin, take statements, move on
+
+---
+
+## The Environment
+
+Crowded marketplace at midday, stalls pressing in, too many people.
+
+**Key Features:**
+- **Crowd:** Difficult terrain, provides cover, could become hostile
+- **Merchant stalls:** Can be ducked under, knocked over
+- **Awning ropes:** Could be cut to create distraction
+- **Storm drain:** Goblin-sized, leads to the undercity
+
+---
+
+## The Twist
+
+The purse contains more than gold—there's a letter inside proving Vendrick has been bribing officials to ignore his watered-down goods. Skitter doesn't know what she has. Vendrick VERY much wants that letter back and will drop all charges if it's returned quietly.
+
+---
+
+## Resolution Paths
+
+### Combat
+- **Enemies:** 1 Guard-Sergeant (Tier 1 Standard), crowd turns hostile
+- **Tactics:** Guard tries to subdue, not kill. Crowd throws produce, blocks exits.
+- **Victory condition:** Fight is unwise—even winning makes PCs wanted criminals
+
+### Negotiation
+- **Leverage:** PCs could offer to pay for the "stolen" goods, vouch for the girl
+- **Objections:** Vendrick wants punishment, not payment (unless they find the letter)
+- **Deal possible:** If PCs discover the letter, Vendrick suddenly becomes very forgiving
+
+### Stealth/Avoidance
+- **Difficulty:** Easy to walk away, harder to help the girl escape
+- **Consequence of failure:** Girl is arrested, PCs are questioned as accomplices
+- **What they miss:** A potential ally, the blackmail material, the undercity connection
+
+### Creative Solution
+- **Hints:** The girl keeps glancing at the storm drain. The purse feels heavier than just coins. Vendrick seems MORE angry than a simple theft warrants.
+
+---
+
+## Aftermath
+
+**If PCs help Skitter escape:** She's part of a network of street kids. They now have eyes and ears all over the city—and a contact in the undercity.
+
+**If Vendrick gets the letter back:** He owes them a favor. A dangerous, compromised man now thinks of them as useful.
+
+**If the letter becomes public:** Vendrick is ruined. His partners blame the PCs. The officials he bribed want to know who else knows.
+
+---
+
+## Loot/Rewards
+
+- **The purse:** 15 gold and the incriminating letter
+- **Skitter's gratitude:** Information, a guide to the undercity, a future favor
+- **Vendrick's "gratitude":** A 50 gold "thank you" and a man who'll betray them later
+
+---
+
+## Connections
+
+**This could lead to:** Undercity exploration, merchant guild politics, a street kid network as allies
+**This connects to:** Local corruption, the thieves' guild, the PCs' reputation in this city
+
+---
+
+*Tags: encounter, urban, tier-1, moral-choice, faction-conflict, social*
+```
+
+---
+
 ## TypeScript Library
 
 For developers who want to use this programmatically.
@@ -646,7 +779,8 @@ daggerheart-converter/
 │   ├── dh-adversary/
 │   ├── dh-environment/
 │   ├── dh-npc/
-│   └── dh-loot/
+│   ├── dh-loot/
+│   └── dh-encounter/
 └── tests/                # Test suite
 ```
 

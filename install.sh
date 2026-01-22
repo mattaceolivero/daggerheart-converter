@@ -30,6 +30,7 @@ mkdir -p "$CLAUDE_SKILLS_DIR/dh-adversary"
 mkdir -p "$CLAUDE_SKILLS_DIR/dh-environment"
 mkdir -p "$CLAUDE_SKILLS_DIR/dh-npc"
 mkdir -p "$CLAUDE_SKILLS_DIR/dh-loot"
+mkdir -p "$CLAUDE_SKILLS_DIR/dh-encounter"
 mkdir -p "$CLAUDE_SKILLS_DIR/daggerheart-docs"
 
 # Copy skill files
@@ -39,6 +40,7 @@ cp "$SCRIPT_DIR/skills/dh-adversary/SKILL.md" "$CLAUDE_SKILLS_DIR/dh-adversary/"
 cp "$SCRIPT_DIR/skills/dh-environment/SKILL.md" "$CLAUDE_SKILLS_DIR/dh-environment/"
 cp "$SCRIPT_DIR/skills/dh-npc/SKILL.md" "$CLAUDE_SKILLS_DIR/dh-npc/"
 cp "$SCRIPT_DIR/skills/dh-loot/SKILL.md" "$CLAUDE_SKILLS_DIR/dh-loot/"
+cp "$SCRIPT_DIR/skills/dh-encounter/SKILL.md" "$CLAUDE_SKILLS_DIR/dh-encounter/"
 
 # Copy reference documentation
 echo "[3/4] Copying reference documentation..."
@@ -73,6 +75,11 @@ if [ ! -f "$CLAUDE_SKILLS_DIR/dh-loot/SKILL.md" ]; then
     MISSING=1
 fi
 
+if [ ! -f "$CLAUDE_SKILLS_DIR/dh-encounter/SKILL.md" ]; then
+    echo "  ERROR: dh-encounter skill not found"
+    MISSING=1
+fi
+
 if [ ! -f "$CLAUDE_SKILLS_DIR/daggerheart-docs/daggerheart-reference.md" ]; then
     echo "  ERROR: Reference documentation not found"
     MISSING=1
@@ -90,6 +97,7 @@ if [ $MISSING -eq 0 ]; then
     echo "  /dh-environment - Create battle environments"
     echo "  /dh-npc         - Create memorable NPCs"
     echo "  /dh-loot        - Generate loot and treasure"
+    echo "  /dh-encounter   - Generate random encounters"
     echo ""
     echo "To test, open Claude Code and type /dh-convert"
     echo ""
