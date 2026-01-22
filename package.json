@@ -1,0 +1,16 @@
+{
+  "name": "daggerheart-converter",
+  "version": "1.0.0",
+  "description": "D&D to Daggerheart monster conversion tool",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npx tsx tests/index.ts",
+    "convert": "npx tsx scripts/convert.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "tsx": "^4.7.0"
+  }
+}
