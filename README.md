@@ -387,7 +387,7 @@ The cult has repurposed this abandoned dwarven forge for their dark ritual. Mass
 **Claude responds with:**
 
 ```markdown
-# MILO THISTLEDOWN
+# RUMMAGE GLOAM
 
 *Halfling Middle-aged, Innkeeper*
 
@@ -418,7 +418,7 @@ The cult has repurposed this abandoned dwarven forge for their dark ritual. Mass
 
 *Dangerous*
 
-Milo lets a group of smugglers use his cellar to store contraband in exchange for "protection money." He hates it but feels trapped - they've threatened his niece if he talks.
+Rummage lets a group of smugglers use his cellar to store contraband in exchange for "protection money." He hates it but feels trapped - they've threatened his niece if he talks.
 
 **If discovered:** He'll panic, then beg for help. If the PCs seem capable, he might desperately ask them to deal with the smugglers. If they seem threatening, he'll lie poorly and then try to warn the smugglers.
 
@@ -426,7 +426,7 @@ Milo lets a group of smugglers use his cellar to store contraband in exchange fo
 
 ## The Quirk
 
-**The Overexplainer**: Milo gives exhaustingly detailed explanations for everything, especially things no one asked about. Ask for a room? He'll explain the history of each room, why one has a draft, which bed his grandmother died in.
+**The Overexplainer**: Rummage gives exhaustingly detailed explanations for everything, especially things no one asked about. Ask for a room? He'll explain the history of each room, why one has a draft, which bed his grandmother died in.
 
 *In play:* When PCs ask simple questions, give a rambling 30-second answer. Let players interrupt him - he won't be offended, he's used to it.
 

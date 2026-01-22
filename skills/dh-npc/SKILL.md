@@ -81,6 +81,47 @@ Use Daggerheart ancestries or setting-appropriate races:
 - Ribbet, Simiah, Drakona
 - Custom/setting-specific
 
+### Naming Philosophy
+
+**CRITICAL: Avoid standard fantasy names.** No "Thorin Ironforge" dwarves or "Elderleaf Moonshadow" elves.
+
+Create names that are:
+- **Unexpected** - Names that make players pause and remember
+- **Evocative** - Sound interesting when spoken aloud
+- **Non-obvious** - Avoid race-based naming tropes
+
+**Naming Techniques:**
+
+1. **Mundane objects as names**: Brick, Solder, Cupboard, Needle, Thimble, Ratchet
+2. **Verbs as names**: Tumble, Clinch, Swerve, Rummage, Dawdle, Lurch
+3. **Sounds/textures**: Crinkle, Velvet, Gravel, Hum, Whisper, Crackle
+4. **Food/drink inspired**: Barley, Juniper, Cardamom, Brine, Marrow, Tallow
+5. **Weather/time**: Dusk, Squall, Frost-not-Frosty, Gloam, Drizzle, Haze
+6. **Compound oddities**: Saltpan, Ironweed, Dusthollow, Kettleblack, Waxworth
+7. **Near-words**: Slightly off real words - Vennick, Thrask, Quillem, Brindel, Scarn
+8. **Cultural mashups**: Mix unexpected linguistic roots - Yoruvo, Kethani, Zubric
+
+**Examples of GOOD names:**
+- Kettleworth Scarn
+- Vex Tumbledown
+- Brindel Saltpan
+- Quillem Gravel
+- Thrask Cupboard
+- Solder Waxworth
+- Yoruvo Clinch
+- Needle Gloam
+- Hum Kettleblack
+- Rummage Thorne
+
+**Examples of BAD names (too standard):**
+- Thorin Stonehammer (dwarf cliché)
+- Elderan Moonshadow (elf cliché)
+- Bilbo Greenleaf (halfling cliché)
+- Grimjaw Bloodaxe (orc cliché)
+- Lady Seraphina Goldweave (noble cliché)
+
+**The Test:** If a name could appear in a generic fantasy name generator, don't use it.
+
 ### Age Categories
 | Category | Human Equivalent | Notes |
 |----------|------------------|-------|
@@ -257,7 +298,7 @@ Every NPC needs ONE memorable quirk:
 **Output:**
 
 ```markdown
-# HARRA IRONBEND
+# SOLDER KETTLEBLACK
 
 *Dwarf Adult, Blacksmith*
 
@@ -288,7 +329,7 @@ Every NPC needs ONE memorable quirk:
 
 *Personal*
 
-Harra is slowly going blind. The years of staring into the forge have damaged her eyes, and she can barely see fine details anymore. She's been hiding it by memorizing her workspace and relying on touch.
+Solder is slowly going blind. The years of staring into the forge have damaged her eyes, and she can barely see fine details anymore. She's been hiding it by memorizing her workspace and relying on touch.
 
 **If discovered:** She'll beg the PCs not to tell anyone - it would ruin her reputation and her livelihood. She might offer free repairs or a discount in exchange for silence.
 
@@ -296,7 +337,7 @@ Harra is slowly going blind. The years of staring into the forge have damaged he
 
 ## The Quirk
 
-**The Forge Test**: Harra judges everyone by their hands. She'll grab a person's hands without asking and examine them, declaring whether they're "workers" or "soft folk." She trusts workers implicitly and treats soft folk with barely concealed disdain.
+**The Forge Test**: Solder judges everyone by their hands. She'll grab a person's hands without asking and examine them, declaring whether they're "workers" or "soft folk." She trusts workers implicitly and treats soft folk with barely concealed disdain.
 
 *In play:* When PCs first meet her, have her grab their hands and make a judgment. Warriors and laborers get respect; nobles and scholars get dismissive grunts.
 
